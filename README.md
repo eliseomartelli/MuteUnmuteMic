@@ -10,7 +10,9 @@ macOS 10.10 Yosemite or higher version.
 
 ## Installation
 
-Download the [latest stable version](https://github.com/CocoaHeadsBrasil/MuteUnmuteMic/releases/download/1.4.2/Un.MuteMic.zip) or clone this repo and build & run.
+```sh
+brew install eliseomartelli/eliseomartelli/<formula>
+```
 
 ## Usage
 
