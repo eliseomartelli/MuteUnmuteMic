@@ -1,0 +1,25 @@
+name: Build App
+
+on:
+  push:
+    tags:
+      - "*.*.*"
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: xcodebuild build
+      - name: Archive
+        run: cd build/Release && zip -r ../../release.zip .
+      - name: Upload to GitHub artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: release.zip
+          path: "release.zip"
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: release.zip
