@@ -8,7 +8,7 @@
 #import "AppDelegate.h"
 #import "AudioMixer.h"
 
-static NSInteger const kDefaultVolume = 70;
+static NSInteger const kDefaultVolume = 75;
 
 @interface AppDelegate ()
 
@@ -20,11 +20,33 @@ static NSInteger const kDefaultVolume = 70;
 
 @implementation AppDelegate
 
+BOOL checkAccessibility(void);
+
+BOOL checkAccessibility(){
+    NSDictionary* opts = @{(__bridge id)kAXTrustedCheckOptionPrompt: @YES};
+    return AXIsProcessTrustedWithOptions((__bridge CFDictionaryRef)opts);
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     [self initDefaults];
     [self configureStatusBar];
     [self updateInputVolume];
+    
+    if (checkAccessibility()) {
+           NSLog(@"Accessibility Enabled");
+       }
+       else {
+           NSLog(@"Accessibility Disabled");
+       }
+    
+    [NSEvent addGlobalMonitorForEventsMatchingMask:NSKeyDownMask handler:^(NSEvent *event){
+         // Activate app when pressing
+         if([event modifierFlags] & NSEventModifierFlagControl && [[event charactersIgnoringModifiers] compare:@"m"] == 0) {
+             [self toggleMute];
+         }
+     }];
+
 }
 
 - (void)initDefaults
@@ -39,7 +61,7 @@ static NSInteger const kDefaultVolume = 70;
     
     NSStatusItem *menuItem =
     [statusBar statusItemWithLength:NSVariableStatusItemLength];
-    [menuItem setToolTip:@"[Un]MuteMic by CocoaHeads Brazil"];
+    [menuItem setToolTip:@"[Un]MuteMic"];
     [menuItem setImage:[NSImage imageNamed:@"mic_on"]];
     [menuItem setHighlightMode:YES];
 
@@ -114,5 +136,6 @@ static NSInteger const kDefaultVolume = 70;
     self.inputVolumeToUnmute = [sender.title integerValue];
     [self updateInputVolume];
 }
+
 
 @end

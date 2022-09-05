@@ -57,7 +57,7 @@ extern Boolean SetMuteOnInputAudioDevice(const AudioDeviceID inputDeviceID,
  *
  *  @return @a true if is muted @a false otherwise
  */
-extern Boolean IsHardwareMuted();
+extern Boolean IsHardwareMuted(void);
 
 /**
  *  Set the mute state of default input via HAL

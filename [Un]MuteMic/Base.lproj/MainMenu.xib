@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9046" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9046"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -23,37 +24,25 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Input Volume" autoenablesItems="NO" id="iVL-f8-mAL">
                         <items>
-                            <menuItem title="100" id="NOm-DS-Fei">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="didSetVolumeInput:" target="Voe-Tx-rLC" id="I1n-CB-cYw"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="90" tag="5" id="cSh-2l-eG8">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="didSetVolumeInput:" target="Voe-Tx-rLC" id="b1z-78-Fgk"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="80" tag="5" id="OoN-lP-2Ll">
+                            <menuItem title="100" tag="5" id="OoN-lP-2Ll">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="didSetVolumeInput:" target="Voe-Tx-rLC" id="itM-AQ-plW"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="70" state="on" id="ZNu-ZY-zwa">
+                            <menuItem title="75" state="on" id="ZNu-ZY-zwa">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="didSetVolumeInput:" target="Voe-Tx-rLC" id="Ykp-jU-4Cw"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="60" id="XY7-OS-7P1">
+                            <menuItem title="50" id="XY7-OS-7P1">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="didSetVolumeInput:" target="Voe-Tx-rLC" id="dqL-Vx-3KL"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="50" id="MrJ-HJ-Wld">
+                            <menuItem title="25" id="MrJ-HJ-Wld">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="didSetVolumeInput:" target="Voe-Tx-rLC" id="PVQ-c8-lcy"/>
