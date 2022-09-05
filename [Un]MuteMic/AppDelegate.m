@@ -42,7 +42,7 @@ BOOL checkAccessibility(){
     
     [NSEvent addGlobalMonitorForEventsMatchingMask:NSKeyDownMask handler:^(NSEvent *event){
          // Activate app when pressing
-         if([event modifierFlags] & NSEventModifierFlagControl && [[event charactersIgnoringModifiers] compare:@"m"] == 0) {
+         if([event modifierFlags] & (NSEventModifierFlagControl | NSEventModifierFlagCommand) && [[event charactersIgnoringModifiers] compare:@"m"] == 0) {
              [self toggleMute];
          }
      }];
