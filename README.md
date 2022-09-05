@@ -11,7 +11,7 @@ macOS 10.10 Yosemite or higher version.
 ## Installation
 
 ```sh
-brew install eliseomartelli/eliseomartelli/<formula>
+brew install eliseomartelli/eliseomartelli/muteunmute
 ```
 
 ## Usage
