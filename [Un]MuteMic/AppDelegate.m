@@ -34,20 +34,30 @@ BOOL checkAccessibility(){
     [self updateInputVolume];
     
     if (checkAccessibility()) {
-           NSLog(@"Accessibility Enabled");
-       }
-       else {
-           NSLog(@"Accessibility Disabled");
-       }
+        NSLog(@"Accessibility Enabled");
+    }
+    else {
+        NSLog(@"Accessibility Disabled");
+        [self constructErrorWithDescription:@"Enable accessibility to use ctrl+cmd+m hotkey."];
+    }
     
     [NSEvent addGlobalMonitorForEventsMatchingMask:NSKeyDownMask handler:^(NSEvent *event){
-         // Activate app when pressing
-         if([event modifierFlags] & (NSEventModifierFlagControl | NSEventModifierFlagCommand) && [[event charactersIgnoringModifiers] compare:@"m"] == 0) {
-             [self toggleMute];
-         }
-     }];
-
+        // Activate app when pressing
+        if([event modifierFlags] & NSEventModifierFlagControl && [event modifierFlags] & NSEventModifierFlagCommand && [[event charactersIgnoringModifiers] compare:@"m"] == 0) {
+            [self toggleMute];
+        }
+    }];
+    
 }
+
+-(NSError*) constructErrorWithDescription:(NSString*)description {
+    return [NSError errorWithDomain:NSBundle.mainBundle.bundleIdentifier
+                               code:0
+                           userInfo:@{
+        NSLocalizedDescriptionKey: description
+    }];
+}
+
 
 - (void)initDefaults
 {
@@ -64,7 +74,7 @@ BOOL checkAccessibility(){
     [menuItem setToolTip:@"[Un]MuteMic"];
     [menuItem setImage:[NSImage imageNamed:@"mic_on"]];
     [menuItem setHighlightMode:YES];
-
+    
     [menuItem setTarget:self];
     [menuItem setAction:@selector(menuItemClicked:)];
     [menuItem.button sendActionOn:NSLeftMouseUpMask|NSRightMouseUpMask];
