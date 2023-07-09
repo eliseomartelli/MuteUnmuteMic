@@ -3,31 +3,72 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D9A9F66F1BC35EDC004395E8 /* AudioMixer.c in Sources */ = {isa = PBXBuildFile; fileRef = D9A9F66D1BC35EDC004395E8 /* AudioMixer.c */; };
-		ECF208BE1BAF2DE6000D3C2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF208BD1BAF2DE6000D3C2C /* AppDelegate.m */; };
-		ECF208C11BAF2DE6000D3C2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF208C01BAF2DE6000D3C2C /* main.m */; };
-		ECF208C31BAF2DE6000D3C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF208C21BAF2DE6000D3C2C /* Assets.xcassets */; };
-		ECF208C61BAF2DE6000D3C2C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF208C41BAF2DE6000D3C2C /* MainMenu.xib */; };
+		553375B42A59C88D00C7166F /* _Un_MuteMicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553375B32A59C88D00C7166F /* _Un_MuteMicApp.swift */; };
+		553375BB2A59C88F00C7166F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553375BA2A59C88F00C7166F /* Preview Assets.xcassets */; };
+		553375C62A59C88F00C7166F /* _Un_MuteMicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553375C52A59C88F00C7166F /* _Un_MuteMicTests.swift */; };
+		553375D02A59C88F00C7166F /* _Un_MuteMicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553375CF2A59C88F00C7166F /* _Un_MuteMicUITests.swift */; };
+		553375D22A59C88F00C7166F /* _Un_MuteMicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553375D12A59C88F00C7166F /* _Un_MuteMicUITestsLaunchTests.swift */; };
+		553375DD2A59C92F00C7166F /* MenuContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553375DC2A59C92F00C7166F /* MenuContentView.swift */; };
+		553375DF2A59CBC000C7166F /* MenuContentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553375DE2A59CBC000C7166F /* MenuContentState.swift */; };
+		55C58B2E2A5AA2CF007CE267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C58B2D2A5AA2CF007CE267 /* Assets.xcassets */; };
+		55C58B302A5AA647007CE267 /* InputChangeNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C58B2F2A5AA647007CE267 /* InputChangeNotifier.swift */; };
+		55D92A472A5A3F860031E0BE /* AudioMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D92A462A5A3F860031E0BE /* AudioMixer.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		553375C22A59C88F00C7166F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF208B11BAF2DE6000D3C2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 553375B02A59C88D00C7166F;
+			remoteInfo = "[Un]MuteMic";
+		};
+		553375CC2A59C88F00C7166F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF208B11BAF2DE6000D3C2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 553375B02A59C88D00C7166F;
+			remoteInfo = "[Un]MuteMic";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		D9A9F66D1BC35EDC004395E8 /* AudioMixer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = AudioMixer.c; path = "[Un]MuteMic/AudioMixer.c"; sourceTree = "<group>"; };
-		D9A9F66E1BC35EDC004395E8 /* AudioMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioMixer.h; path = "[Un]MuteMic/AudioMixer.h"; sourceTree = "<group>"; };
-		ECF208B91BAF2DE6000D3C2C /* [Un]MuteMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[Un]MuteMic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECF208BC1BAF2DE6000D3C2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		ECF208BD1BAF2DE6000D3C2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ECF208C01BAF2DE6000D3C2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ECF208C21BAF2DE6000D3C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ECF208C51BAF2DE6000D3C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		ECF208C71BAF2DE6000D3C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		553375B12A59C88D00C7166F /* [Un]MuteMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[Un]MuteMic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		553375B32A59C88D00C7166F /* _Un_MuteMicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Un_MuteMicApp.swift; sourceTree = "<group>"; };
+		553375BA2A59C88F00C7166F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		553375BC2A59C88F00C7166F /* _Un_MuteMic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _Un_MuteMic.entitlements; sourceTree = "<group>"; };
+		553375C12A59C88F00C7166F /* [Un]MuteMicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "[Un]MuteMicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		553375C52A59C88F00C7166F /* _Un_MuteMicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Un_MuteMicTests.swift; sourceTree = "<group>"; };
+		553375CB2A59C88F00C7166F /* [Un]MuteMicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "[Un]MuteMicUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		553375CF2A59C88F00C7166F /* _Un_MuteMicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Un_MuteMicUITests.swift; sourceTree = "<group>"; };
+		553375D12A59C88F00C7166F /* _Un_MuteMicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Un_MuteMicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		553375DC2A59C92F00C7166F /* MenuContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContentView.swift; sourceTree = "<group>"; };
+		553375DE2A59CBC000C7166F /* MenuContentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContentState.swift; sourceTree = "<group>"; };
+		55C58B2D2A5AA2CF007CE267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Downloads/MuteUnmuteMic-master/[Un]MuteMic/Assets.xcassets"; sourceTree = "<group>"; };
+		55C58B2F2A5AA647007CE267 /* InputChangeNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputChangeNotifier.swift; sourceTree = "<group>"; };
+		55D92A462A5A3F860031E0BE /* AudioMixer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMixer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ECF208B61BAF2DE6000D3C2C /* Frameworks */ = {
+		553375AE2A59C88D00C7166F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553375BE2A59C88F00C7166F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553375C82A59C88F00C7166F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,20 +78,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D9A9F6701BC5830F004395E8 /* AudioMixer */ = {
+		553375B22A59C88D00C7166F /* [Un]MuteMic */ = {
 			isa = PBXGroup;
 			children = (
-				D9A9F66D1BC35EDC004395E8 /* AudioMixer.c */,
-				D9A9F66E1BC35EDC004395E8 /* AudioMixer.h */,
+				553375B32A59C88D00C7166F /* _Un_MuteMicApp.swift */,
+				553375DC2A59C92F00C7166F /* MenuContentView.swift */,
+				553375DE2A59CBC000C7166F /* MenuContentState.swift */,
+				55C58B2D2A5AA2CF007CE267 /* Assets.xcassets */,
+				553375BC2A59C88F00C7166F /* _Un_MuteMic.entitlements */,
+				553375B92A59C88F00C7166F /* Preview Content */,
+				55D92A462A5A3F860031E0BE /* AudioMixer.swift */,
+				55C58B2F2A5AA647007CE267 /* InputChangeNotifier.swift */,
 			);
-			name = AudioMixer;
-			path = ..;
+			path = "[Un]MuteMic";
+			sourceTree = "<group>";
+		};
+		553375B92A59C88F00C7166F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				553375BA2A59C88F00C7166F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		553375C42A59C88F00C7166F /* [Un]MuteMicTests */ = {
+			isa = PBXGroup;
+			children = (
+				553375C52A59C88F00C7166F /* _Un_MuteMicTests.swift */,
+			);
+			path = "[Un]MuteMicTests";
+			sourceTree = "<group>";
+		};
+		553375CE2A59C88F00C7166F /* [Un]MuteMicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				553375CF2A59C88F00C7166F /* _Un_MuteMicUITests.swift */,
+				553375D12A59C88F00C7166F /* _Un_MuteMicUITestsLaunchTests.swift */,
+			);
+			path = "[Un]MuteMicUITests";
 			sourceTree = "<group>";
 		};
 		ECF208B01BAF2DE6000D3C2C = {
 			isa = PBXGroup;
 			children = (
-				ECF208BB1BAF2DE6000D3C2C /* [Un]MuteMic */,
+				553375B22A59C88D00C7166F /* [Un]MuteMic */,
+				553375C42A59C88F00C7166F /* [Un]MuteMicTests */,
+				553375CE2A59C88F00C7166F /* [Un]MuteMicUITests */,
 				ECF208BA1BAF2DE6000D3C2C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,52 +131,68 @@
 		ECF208BA1BAF2DE6000D3C2C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ECF208B91BAF2DE6000D3C2C /* [Un]MuteMic.app */,
+				553375B12A59C88D00C7166F /* [Un]MuteMic.app */,
+				553375C12A59C88F00C7166F /* [Un]MuteMicTests.xctest */,
+				553375CB2A59C88F00C7166F /* [Un]MuteMicUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		ECF208BB1BAF2DE6000D3C2C /* [Un]MuteMic */ = {
-			isa = PBXGroup;
-			children = (
-				ECF208BC1BAF2DE6000D3C2C /* AppDelegate.h */,
-				ECF208BD1BAF2DE6000D3C2C /* AppDelegate.m */,
-				ECF208C21BAF2DE6000D3C2C /* Assets.xcassets */,
-				ECF208C41BAF2DE6000D3C2C /* MainMenu.xib */,
-				ECF208C71BAF2DE6000D3C2C /* Info.plist */,
-				ECF208BF1BAF2DE6000D3C2C /* Supporting Files */,
-				D9A9F6701BC5830F004395E8 /* AudioMixer */,
-			);
-			path = "[Un]MuteMic";
-			sourceTree = "<group>";
-		};
-		ECF208BF1BAF2DE6000D3C2C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				ECF208C01BAF2DE6000D3C2C /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ECF208B81BAF2DE6000D3C2C /* [Un]MuteMic */ = {
+		553375B02A59C88D00C7166F /* [Un]MuteMic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECF208CA1BAF2DE6000D3C2C /* Build configuration list for PBXNativeTarget "[Un]MuteMic" */;
+			buildConfigurationList = 553375D32A59C88F00C7166F /* Build configuration list for PBXNativeTarget "[Un]MuteMic" */;
 			buildPhases = (
-				ECF208B51BAF2DE6000D3C2C /* Sources */,
-				ECF208B61BAF2DE6000D3C2C /* Frameworks */,
-				ECF208B71BAF2DE6000D3C2C /* Resources */,
+				553375AD2A59C88D00C7166F /* Sources */,
+				553375AE2A59C88D00C7166F /* Frameworks */,
+				553375AF2A59C88D00C7166F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "[Un]MuteMic";
-			productName = MuteUnmuteMic;
-			productReference = ECF208B91BAF2DE6000D3C2C /* [Un]MuteMic.app */;
+			productName = "[Un]MuteMic";
+			productReference = 553375B12A59C88D00C7166F /* [Un]MuteMic.app */;
 			productType = "com.apple.product-type.application";
+		};
+		553375C02A59C88F00C7166F /* [Un]MuteMicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553375D62A59C88F00C7166F /* Build configuration list for PBXNativeTarget "[Un]MuteMicTests" */;
+			buildPhases = (
+				553375BD2A59C88F00C7166F /* Sources */,
+				553375BE2A59C88F00C7166F /* Frameworks */,
+				553375BF2A59C88F00C7166F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				553375C32A59C88F00C7166F /* PBXTargetDependency */,
+			);
+			name = "[Un]MuteMicTests";
+			productName = "[Un]MuteMicTests";
+			productReference = 553375C12A59C88F00C7166F /* [Un]MuteMicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		553375CA2A59C88F00C7166F /* [Un]MuteMicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553375D92A59C88F00C7166F /* Build configuration list for PBXNativeTarget "[Un]MuteMicUITests" */;
+			buildPhases = (
+				553375C72A59C88F00C7166F /* Sources */,
+				553375C82A59C88F00C7166F /* Frameworks */,
+				553375C92A59C88F00C7166F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				553375CD2A59C88F00C7166F /* PBXTargetDependency */,
+			);
+			name = "[Un]MuteMicUITests";
+			productName = "[Un]MuteMicUITests";
+			productReference = 553375CB2A59C88F00C7166F /* [Un]MuteMicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -111,11 +200,21 @@
 		ECF208B11BAF2DE6000D3C2C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1340;
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = "CocoaHeads Brasil";
 				TargetAttributes = {
-					ECF208B81BAF2DE6000D3C2C = {
-						CreatedOnToolsVersion = 7.0;
+					553375B02A59C88D00C7166F = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					553375C02A59C88F00C7166F = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 553375B02A59C88D00C7166F;
+					};
+					553375CA2A59C88F00C7166F = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 553375B02A59C88D00C7166F;
 					};
 				};
 			};
@@ -132,48 +231,289 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ECF208B81BAF2DE6000D3C2C /* [Un]MuteMic */,
+				553375B02A59C88D00C7166F /* [Un]MuteMic */,
+				553375C02A59C88F00C7166F /* [Un]MuteMicTests */,
+				553375CA2A59C88F00C7166F /* [Un]MuteMicUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ECF208B71BAF2DE6000D3C2C /* Resources */ = {
+		553375AF2A59C88D00C7166F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF208C31BAF2DE6000D3C2C /* Assets.xcassets in Resources */,
-				ECF208C61BAF2DE6000D3C2C /* MainMenu.xib in Resources */,
+				553375BB2A59C88F00C7166F /* Preview Assets.xcassets in Resources */,
+				55C58B2E2A5AA2CF007CE267 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553375BF2A59C88F00C7166F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553375C92A59C88F00C7166F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ECF208B51BAF2DE6000D3C2C /* Sources */ = {
+		553375AD2A59C88D00C7166F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF208C11BAF2DE6000D3C2C /* main.m in Sources */,
-				ECF208BE1BAF2DE6000D3C2C /* AppDelegate.m in Sources */,
-				D9A9F66F1BC35EDC004395E8 /* AudioMixer.c in Sources */,
+				553375B42A59C88D00C7166F /* _Un_MuteMicApp.swift in Sources */,
+				553375DF2A59CBC000C7166F /* MenuContentState.swift in Sources */,
+				55D92A472A5A3F860031E0BE /* AudioMixer.swift in Sources */,
+				553375DD2A59C92F00C7166F /* MenuContentView.swift in Sources */,
+				55C58B302A5AA647007CE267 /* InputChangeNotifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553375BD2A59C88F00C7166F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553375C62A59C88F00C7166F /* _Un_MuteMicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553375C72A59C88F00C7166F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553375D22A59C88F00C7166F /* _Un_MuteMicUITestsLaunchTests.swift in Sources */,
+				553375D02A59C88F00C7166F /* _Un_MuteMicUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		ECF208C41BAF2DE6000D3C2C /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECF208C51BAF2DE6000D3C2C /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		553375C32A59C88F00C7166F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 553375B02A59C88D00C7166F /* [Un]MuteMic */;
+			targetProxy = 553375C22A59C88F00C7166F /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+		553375CD2A59C88F00C7166F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 553375B02A59C88D00C7166F /* [Un]MuteMic */;
+			targetProxy = 553375CC2A59C88F00C7166F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		553375D42A59C88F00C7166F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "[Un]MuteMic/_Un_MuteMic.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"[Un]MuteMic/Preview Content\"";
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 CocoaHeads Brasil. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.eliseomartelli.-Un-MuteMic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		553375D52A59C88F00C7166F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "[Un]MuteMic/_Un_MuteMic.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"[Un]MuteMic/Preview Content\"";
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 CocoaHeads Brasil. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.eliseomartelli.-Un-MuteMic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		553375D72A59C88F00C7166F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.eliseomartelli.-Un-MuteMicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/[Un]MuteMic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/[Un]MuteMic";
+			};
+			name = Debug;
+		};
+		553375D82A59C88F00C7166F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.eliseomartelli.-Un-MuteMicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/[Un]MuteMic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/[Un]MuteMic";
+			};
+			name = Release;
+		};
+		553375DA2A59C88F00C7166F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.eliseomartelli.-Un-MuteMicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "[Un]MuteMic";
+			};
+			name = Debug;
+		};
+		553375DB2A59C88F00C7166F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.eliseomartelli.-Un-MuteMicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "[Un]MuteMic";
+			};
+			name = Release;
+		};
 		ECF208C81BAF2DE6000D3C2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -205,9 +545,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -260,9 +602,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -277,49 +621,41 @@
 			};
 			name = Release;
 		};
-		ECF208CB1BAF2DE6000D3C2C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "[Un]MuteMic/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.cocoaheads.MuteUnmuteMic;
-				PRODUCT_NAME = "[Un]MuteMic";
-			};
-			name = Debug;
-		};
-		ECF208CC1BAF2DE6000D3C2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "[Un]MuteMic/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.cocoaheads.MuteUnmuteMic;
-				PRODUCT_NAME = "[Un]MuteMic";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		553375D32A59C88F00C7166F /* Build configuration list for PBXNativeTarget "[Un]MuteMic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553375D42A59C88F00C7166F /* Debug */,
+				553375D52A59C88F00C7166F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553375D62A59C88F00C7166F /* Build configuration list for PBXNativeTarget "[Un]MuteMicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553375D72A59C88F00C7166F /* Debug */,
+				553375D82A59C88F00C7166F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553375D92A59C88F00C7166F /* Build configuration list for PBXNativeTarget "[Un]MuteMicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553375DA2A59C88F00C7166F /* Debug */,
+				553375DB2A59C88F00C7166F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		ECF208B41BAF2DE6000D3C2C /* Build configuration list for PBXProject "[Un]MuteMic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECF208C81BAF2DE6000D3C2C /* Debug */,
 				ECF208C91BAF2DE6000D3C2C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ECF208CA1BAF2DE6000D3C2C /* Build configuration list for PBXNativeTarget "[Un]MuteMic" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ECF208CB1BAF2DE6000D3C2C /* Debug */,
-				ECF208CC1BAF2DE6000D3C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

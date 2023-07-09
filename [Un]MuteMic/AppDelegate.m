@@ -5,7 +5,6 @@
 //  Copyright © 2015 CocoaHeads Brasil. All rights reserved.
 //
 
-#import "AppDelegate.h"
 #import "AudioMixer.h"
 
 static NSInteger const kDefaultVolume = 75;
@@ -22,7 +21,7 @@ static NSInteger const kDefaultVolume = 75;
 
 BOOL checkAccessibility(void);
 
-BOOL checkAccessibility(){
+BOOL checkAccessibility(void){
     NSDictionary* opts = @{(__bridge id)kAXTrustedCheckOptionPrompt: @YES};
     return AXIsProcessTrustedWithOptions((__bridge CFDictionaryRef)opts);
 }
@@ -41,7 +40,7 @@ BOOL checkAccessibility(){
         [self constructErrorWithDescription:@"Enable accessibility to use ctrl+cmd+m hotkey."];
     }
     
-    [NSEvent addGlobalMonitorForEventsMatchingMask:NSKeyDownMask handler:^(NSEvent *event){
+    [NSEvent addGlobalMonitorForEventsMatchingMask:NSEventMaskKeyDown handler:^(NSEvent *event){
         // Activate app when pressing
         if([event modifierFlags] & NSEventModifierFlagControl && [event modifierFlags] & NSEventModifierFlagCommand && [[event charactersIgnoringModifiers] compare:@"m"] == 0) {
             [self toggleMute];
