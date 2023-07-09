@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		553375B42A59C88D00C7166F /* _Un_MuteMicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553375B32A59C88D00C7166F /* _Un_MuteMicApp.swift */; };
-		553375BB2A59C88F00C7166F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553375BA2A59C88F00C7166F /* Preview Assets.xcassets */; };
 		553375C62A59C88F00C7166F /* _Un_MuteMicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553375C52A59C88F00C7166F /* _Un_MuteMicTests.swift */; };
 		553375D02A59C88F00C7166F /* _Un_MuteMicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553375CF2A59C88F00C7166F /* _Un_MuteMicUITests.swift */; };
 		553375D22A59C88F00C7166F /* _Un_MuteMicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553375D12A59C88F00C7166F /* _Un_MuteMicUITestsLaunchTests.swift */; };
@@ -39,7 +38,6 @@
 /* Begin PBXFileReference section */
 		553375B12A59C88D00C7166F /* [Un]MuteMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[Un]MuteMic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		553375B32A59C88D00C7166F /* _Un_MuteMicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Un_MuteMicApp.swift; sourceTree = "<group>"; };
-		553375BA2A59C88F00C7166F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		553375BC2A59C88F00C7166F /* _Un_MuteMic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _Un_MuteMic.entitlements; sourceTree = "<group>"; };
 		553375C12A59C88F00C7166F /* [Un]MuteMicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "[Un]MuteMicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		553375C52A59C88F00C7166F /* _Un_MuteMicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Un_MuteMicTests.swift; sourceTree = "<group>"; };
@@ -86,19 +84,10 @@
 				553375DE2A59CBC000C7166F /* MenuContentState.swift */,
 				55C58B2D2A5AA2CF007CE267 /* Assets.xcassets */,
 				553375BC2A59C88F00C7166F /* _Un_MuteMic.entitlements */,
-				553375B92A59C88F00C7166F /* Preview Content */,
 				55D92A462A5A3F860031E0BE /* AudioMixer.swift */,
 				55C58B2F2A5AA647007CE267 /* InputChangeNotifier.swift */,
 			);
 			path = "[Un]MuteMic";
-			sourceTree = "<group>";
-		};
-		553375B92A59C88F00C7166F /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				553375BA2A59C88F00C7166F /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		553375C42A59C88F00C7166F /* [Un]MuteMicTests */ = {
@@ -243,7 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				553375BB2A59C88F00C7166F /* Preview Assets.xcassets in Resources */,
 				55C58B2E2A5AA2CF007CE267 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,7 +314,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"[Un]MuteMic/Preview Content\"";
 				DEVELOPMENT_TEAM = B2VB6XBSPA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -342,7 +329,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.0.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "it.eliseomartelli.-Un-MuteMic";
@@ -370,7 +357,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"[Un]MuteMic/Preview Content\"";
 				DEVELOPMENT_TEAM = B2VB6XBSPA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -386,7 +372,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.0.1;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "it.eliseomartelli.-Un-MuteMic";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,8 +8,6 @@
 
 import SwiftUI
 
-
-
 struct MenuContentView: Scene {
     @ObservedObject var menuContentState = MenuContentState()
     
@@ -56,6 +54,4 @@ struct MenuContentView: Scene {
         })
         
     }
-    
-    func getVolume() {}
 }
